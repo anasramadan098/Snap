@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html {
+	position:relative;
+	overflow:hidden
+}
+body {
+	position: relative;
+    	overflow: hidden;
+}
 .container {
     padding: 0 100px;
 }
@@ -155,7 +163,7 @@ section .container .img {
     flex-basis: 45%;
 }
 section .container .img img {
-    max-width: 100%;
+ width: 350px;
 }
 
 .mobile {
@@ -248,6 +256,9 @@ section .container .img img {
     .col-2 .member {
         display: none !important;
     }
+	section .container {
+	flex-direction: column;
+}
     section .text {
         text-align: center;
     }
@@ -273,8 +284,11 @@ section .container .img img {
         flex-direction: column;
     }
     section .container .img {
-        order: -1;
-        width: 200%;
+    order: -1;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     section .text  {
         gap: 20px;
